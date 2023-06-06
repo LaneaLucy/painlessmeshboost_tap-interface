@@ -1,3 +1,17 @@
+# PainlessMeshBoost TAP Interface
+
+## Usage (WIP)
+
+connect with mesh wifi
+```
+sudo ./bin/painlessMeshBoost --client <node_ip> --tap-debug --ifname testtap
+sudo ip link set testtap up
+```
+replace <node_ip> with ip address of connected mesh node
+open wireshark and look at testtap
+create traffic (Example: arping -I testtap -c 4 google.de)
+
+
 # PainlessMeshBoost
 
 This is a boost based version of [painlessMesh](gitlab.com/painlessMesh/painlessMesh). For more details on how to set up painlessMesh to log to this listener see the usage instructions below and the [wiki](https://gitlab.com/BlackEdder/painlessMesh/wikis/bridge-between-mesh-and-another-network). `painlessMeshBoost` is a replacement of the old `painlessMeshListener`, which was harder to maintain and difficult to compile on low memory/arm devices such as the raspberrypi. `painlessMeshBoost` shares most of its code with `painlessMesh`, which ensures compatibility between the two.
