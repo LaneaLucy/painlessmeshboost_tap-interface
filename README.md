@@ -8,7 +8,9 @@ sudo ./bin/painlessMeshBoost --client <node_ip> --tap-debug --ifname testtap
 sudo ip link set testtap up
 ```
 replace <node_ip> with ip address of connected mesh node
+
 open wireshark and look at testtap
+
 create traffic (Example: arping -I testtap -c 4 google.de)
 
 
