@@ -2,6 +2,8 @@
 
 ## Usage (WIP)
 
+esp code in folder basic
+
 connect with mesh wifi
 ```
 sudo ./bin/painlessMeshBoost --client <node_ip> --tap-debug --ifname testtap
